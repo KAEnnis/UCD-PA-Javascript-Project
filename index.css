@@ -63,13 +63,13 @@ border: 2px black solid;
   
   h1 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 54px;
   }
  
   h2 {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .form-group {
@@ -196,6 +196,18 @@ width: 30%;
      color: white;
      font-size: larger;
      font-weight: 500;
-  
+    font-size: 20.5px;
    }
+   h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+ 
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }
