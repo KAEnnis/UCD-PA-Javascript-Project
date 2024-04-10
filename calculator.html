@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/index.css">
+ 
+  
+</head>
+<body>
+<div class="header"></div>
+    <h1>Carbon Footprint Calculator</h1>
+</div>
+</header>
+<nav><a href="index.html">Home Page</a></nav>
+
+<H1>1. Stationary Combustion. These are direct emissions<br> from the different fuels used on your site.</H1>
+<h2>Enter Values for annual usage below in the quantity used columns</h2>
+  
+<table id="scope1">
+    <thead>
+        <tr>
+            <th>Fuel Type</th>
+            <th>Quantity Used (units)</th>
+            <th>CO2 Emissions Factor (kgCO2 per unit)</th>
+            <th>Total CO2 Emissions (kgCO2)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="fuelType1">Natural Gas</td>
+            <td><input id="quantity1"  type="number"  placeholder="0"></td>
+            <td><input id="emissions1" type="number"  placeholder="1.887"></td>
+            <td><input id="totalEmissions1" type="number"  placeholder="0"></td>
+            
+        </tr>
+        <tr>
+            <td id="fuelType2">Gas/Diesel Oil</td>
+            <td><input id="quantity2"  type="number"  placeholder="0 litres"></td>
+            <td><input id="emissions2" type="number"  placeholder="2.686"></td>
+            <td><input id="totalEmissions2" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td id="fuelType3">LPG</td>
+            <td><input id="quantity3"  type="number"  placeholder="0 litres"></td>
+            <td><input id="emissions3" type="number"  placeholder="1.613"></td>
+            <td><input id="totalEmissions3" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td id="fuelType4">Coal tar</td>
+            <td><input id="quantity4"  type="number"  placeholder="0 kg"></td>
+            <td><input id="emissions4" type="number"  placeholder="2.279"></td>
+            <td><input id="totalEmissions4" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td id="fuelType5">coal briquettes</td>
+            <td><input id="quantity5"  type="number"  placeholder="0 kg"></td>
+            <td><input id="emissions5" type="number"  placeholder="2.033"></td>
+            <td><input id="totalEmissions5" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td id="fuelType6">Wood</td>
+            <td><input id="quantity6"  type="numbert"  placeholder="0 kg"></td>
+            <td><input id="emissions6" type="number"  placeholder="1.777"></td>
+            <td><input id="totalEmissions6" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td id="fuelType7">Biomass</td>
+            <td><input id="quantity7"  type="number"  placeholder="0 kg"></td>
+            <td><input id="emissions7" type="number"  placeholder="1.180"></td>
+            <td><input id="totalEmissions7" type="number"  placeholder="0"></td>
+        </tr>
+        <tr id="totals">
+            <td colspan="3">Total Stationary Emissions</td>
+            <td id="totalStationaryEmissions">0</td>
+                
+        </tr>
+    </tbody>
+</table>
+
+<H1>2. Mobile combustion. These are the direct emissions from your own fleet<br> (business travel and employee commuting are not included)</H1>
+<h2>Enter Values for annual usage below in the quantity used columns</h2>
+<table id="scope2">
+    <thead>
+        <tr>
+            <th>Fuel Type</th>
+            <th>Quantity Used (units)</th>
+            <th>CO2 Emissions Factor (kgCO2 per unit)</th>
+            <th>Total CO2 Emissions (kgCO2)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="fuelType1">Petrol</td>
+            <td><input id="quantity8"  type="number"  placeholder="0 Litres"></td>
+            <td><input id="emissions8" type="number"  placeholder="2.272"></td>
+            <td><input id="totalEmissions8" type="number"  placeholder="0"></td>
+            
+        </tr>
+        <tr>
+            <td id="fuelType2">Diesel</td>
+            <td><input id="quantity9"  type="number"  placeholder="0 litres"></td>
+            <td><input id="emissions9" type="number"  placeholder="2.676"></td>
+            <td><input id="totalEmissions9" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td id="fuelType3">Biodiesel</td>
+            <td><input id="quantity10"  type="number"  placeholder="0 litres"></td>
+            <td><input id="emissions10" type="number"  placeholder="2.4141"></td>
+            <td><input id="totalEmissions10" type="number"  placeholder="0"></td>
+        </tr>
+        
+        <tr id="totals">
+            <td colspan="3">Total Mobile Combustion</td>
+                <td id="totalMobileEmissions">0</td>
+        </tr>
+    </tbody>
+</table>
+
+<H1>3. Other Direct Emissions. These are greenhouse gases eliminated<br> in various processes in you activity.</H1>
+<h2>Enter Values for annual usage below in the quantity used columns</h2>
+<table id="scope3">
+    <thead>
+        <tr>
+            <th>Emissions</th>
+            <th>Amount of units per year</t>
+            <th>kg CO2 equivalent per unit</th>
+            <th>Total kg CO2 equivalent</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CO2</td>
+            <td><input id="quantity11"  type="number"  placeholder="0 kg"></td>
+            <td><input id="emissions11" type="number"  placeholder="1.0"></td>
+            <td><input id="totalEmissions11" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td>Methane</td>
+            <td><input id="quantity12"  type="number"  placeholder="0 kg"></td>
+            <td><input id="emissions12" type="number"  placeholder="21.0"></td>
+            <td><input id="totalEmissions12" type="number"  placeholder="0"></td>
+        </tr>
+        <tr>
+            <td>Nitrous Oxide</td>
+            <td><input id="quantity13"  type="number"  placeholder="0 kg"></td>
+            <td><input id="emissions13" type="number"  placeholder="310.0"></td>
+            <td><input id="totalEmissions13" type="number"  placeholder="0"></td>
+        </tr>
+        
+        <tr id="totals">
+            <td colspan="3">Total Other Direct Emissions</td>
+                <td id="OtherDirectEmissions">0</td>
+        </tr>
+    </tbody>
+
+
+    
+</table>
+
+
+<H1>4. These are indirect electricity emissions generated by the electricity<br> by the electricity purchased from your provide.</H1>
+<h2>Enter Values for annual usage below in the quantity used columns</h2>
+<table id="scope4">
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Amount of units per year</t>
+            <th>kg CO2 equivalent per unit</th>
+            <th>Total kg CO2 equivalent</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Electricity</td>
+            <td><input id="quantity14"  type="number"  placeholder="0 kWh"></td>
+            <td><input id="emissions14" type="number"  placeholder="0.535"></td>
+            <td><input id="totalEmissions14" type="number"  placeholder="0"></td>
+        </tr>
+        
+        
+        <tr id="totals">
+            <td colspan="3" id="result">Total Stationary Combustion</td>
+                <td id="totalStationaryCombustion">0</td>
+        </tr>
+    </tbody>
+    </table>
+    <button id="calculate-button">Calculate</button>
+
+   
+    <h2>Enter all values above before pressing Generate Pie chart Button<br> Refresh Page and Enter values before re-trying</h2>
+   
+<div class="graph">
+    <button onclick="generatePieChart()">Generate Pie Chart</button>
+ 
+    <canvas id="pieChart" width="400" height="400"></canvas>
+</div>
+<section>
+<H1>Carbon Reduction Examples</H1>
+    <!-- Full-width images with number and caption text -->
+    <div class="gallery">
+        <div class="mySlides fade">
+         <div class="numbertext">1 / 3</div>
+             <img src="Images/Solar Panels.jpg">
+        <div class="text">Solar Panels</div>
+        </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="Images/Insulation.jpg">
+        <div class="text">Insulation</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Images/Electric Car.jpg">
+        <div class="text">Electric Cars</div>
+      </div>
+    </section>
+    <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+             <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    
+    </div>
+    
+
+
+     
+     
+  
+     
+     <script>
+     let slideIndex = 0;
+     showSlides();
+     
+     function showSlides() {
+       let i;
+       let slides = document.getElementsByClassName("mySlides");
+       let dots = document.getElementsByClassName("dot");
+       for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}    
+       for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";  
+       dots[slideIndex-1].className += " active";
+       setTimeout(showSlides, 3000); // Change image every 3 seconds
+     }
+     </script>
+
+</body>
+<footer>App designed by ABC</footer>
+</html>

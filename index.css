@@ -1,0 +1,201 @@
+.title{
+  color: black;
+  width: 100%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+nav{
+width: 100%;
+font-size: 13px;
+color: #0056b3;
+
+}
+
+table, th, td {
+ width: 100%;
+    border: 1px solid;
+    border-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+ 
+  }
+  table, th{background-color: rgb(21, 208, 233);
+    padding-top: 0%;
+    font-weight: 700;
+  
+  }
+
+.intro{
+background-color: aqua;
+margin-top: 100px;
+padding-top:1%;
+padding-bottom: 1%;
+border: 2px black solid;
+
+}
+
+ 
+
+ input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  
+    }
+
+   
+  
+  .container {
+    max-width: 25%;
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:grey;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+ 
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    width: 15%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f44336; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #password-strength {
+    margin-top: 5px;
+    font-size: 0.8em;
+  }
+
+  .div101{
+background-color: green;
+width: 30%;
+
+
+  }
+  
+  .gallery{
+    margin-left: 42%;
+    margin-top: 50px;
+  }
+  .slideshow-container {
+    float:center;
+    width: 100%;
+    padding-top: 4%;
+   
+  }
+  
+  .pieChart{
+    -ms-flex-item-align: end;
+  }
+  
+ .graph{
+  margin-left: 40%
+ }
+
+ .mySlides fade{
+  margin-left: auto;
+ }
+
+ 
+ footer{
+  text-align: center;
+  margin-top: 20px;
+ }
+ 
+
+ 
+ @media(max-width: 700px){
+  button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 46%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f44336; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .nav{
+    width: 100%;
+    font-size: 20px;
+    color: #0056b3;
+ }
+ .gallery{
+  margin-left: 0%;
+  width: 90%;
+  margin-top: 50px;
+}
+.graph{
+  margin-left: 0%
+ }
+ table, th, td {
+  width: 80%;
+     border: 1px solid;
+     border-color: black;
+     color: white;
+     font-size: larger;
+     font-weight: 500;
+  
+   }
+}
